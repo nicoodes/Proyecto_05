@@ -1,0 +1,228 @@
+// BASE
+* {box-sizing: border-box;}
+
+h1, h3, h5, h6 {font-family: 'Montserrat', sans-serif;}
+
+h2,h4 {font-family: 'Kaushan Script', cursive;}
+
+h1,h3 {font-weight: 700;}
+
+h5, h6 {font-weight: 400;}
+
+p { font-size: 0.9375rem;
+	font-weight: 400;
+	color: $gray-light;}
+
+img {width: 100%;}
+
+
+//SHAPES
+.line {
+	background-color: $brand-primary;
+	width: 60px;
+	height: 3px;
+	display: block;
+	margin: 1.875rem auto;
+}
+
+.line-white {
+	@extend .line;
+	background-color: $white;
+}
+
+.line-small {
+	width: 57px;
+	margin: 1.125rem auto 1.125rem 0; 
+}
+
+
+//GRADIENT HOVER
+.gradient-container,
+.gradient-container-move {
+	position: relative;
+	// z-index: 1;
+}
+.gradient-content {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(243,129,129,0.9);
+	background: linear-gradient(to bottom, rgba(243,129,129,0.9) 0%, rgba(252,227,138,0.9) 100%);
+	// z-index: 100;
+}
+
+.gradient-container-move:hover {
+	transform: translate(-7px, -7px);
+	box-shadow: 7px 7px 0 $brand-4;
+	& .gradient-content{
+		// display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+} 
+
+.gradient-container:hover .gradient-content {
+	// display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+//BANNER
+#banner {
+	background: url(../img/banner2.jpg) no-repeat center;
+	background-size: cover;
+	// height: 100vh;
+	// width: 100vw;
+
+	.gradient-content {
+		display: block;
+	}
+}
+//MAIN NAV
+#main-nav {
+	.nav-link {
+		display: block;
+		text-transform: uppercase;
+		margin: 0 0.8rem 0;
+		padding-bottom: 1rem;
+		padding-top: 1.5rem;
+		&:hover {
+			color: $brand-2;
+			border-bottom: 2px solid $brand-2;
+			padding-bottom: calc(1rem - 2px);
+		}
+		@media screen and (max-width: 992px) {
+			
+			padding: 0.75rem 0;
+			&:hover {
+				border-bottom: none;
+				padding-bottom: 0.75rem;
+			}
+		}
+	}
+}
+
+.logo {
+	font-size: 1.875rem;
+	font-weight: 800;
+	padding-bottom: 0.8rem;
+}
+
+//BANNER CONTENT
+.banner-content {
+		text-align: center;
+		margin: 4rem 0;
+		.btn {
+			border: 1px solid $white;
+			border-radius: 0;
+			font-weight: 700;
+
+			&:hover {
+				background-color: $white;
+
+			}
+		}
+		@media screen and (max-width: 992px) {
+			h1 {
+				font-size: 13vw;
+			}
+			h2 {
+				font-size: 6vw;
+			}
+		}
+}
+
+//BANNER SLIDER
+.banner-slider {
+	padding: 1rem 0;
+	.line-progress {
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: $white;
+		margin-bottom: 0.5rem;
+	}
+	span {
+		font-weight: 700;
+		font-size: 1.5rem;
+		color: $white;
+	}
+	a {
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 1.125rem;
+	}
+}
+
+
+.empty {
+	height: 500px;
+	background-color: lighten(green, 50%);
+}
+
+//FEATURES GENERAL
+
+.feature-content {
+	padding: 6rem 0;
+}
+
+.feature-heading {
+	text-align: center;
+	
+}
+
+//FEATURE ONE
+.about-us-img {
+	margin-top: 5rem;
+	h5 {
+		font-weight: 700;
+		margin-top: 0.5rem;
+	}
+	& > div {
+		margin-bottom: 1.25rem;
+	}
+}
+.icon {
+	display: block;
+	width: 30px;
+}
+// JUMB 1
+#jumbotron-one {
+	background-color: $brand-4;
+	text-align: center;
+	.container {
+		flex-wrap: wrap;
+	}
+	.numbers {
+		flex: 1 1 20%;
+		align-items: center;
+		padding: 3.5rem 0.5rem;
+		border: 1px solid lighten($brand-4, 10%);
+		border-top: none;
+		border-bottom: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		h2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+		}
+		@media screen and (max-width: 768px) {
+			flex: 1 1 33%;
+		}
+	}
+
+	
+}
+//FEATURE two
+#feature-two {
+	
+}
