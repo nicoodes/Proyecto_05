@@ -32,7 +32,7 @@ img {width: 100%;}
 
 .line-small {
 	width: 57px;
-	margin: 1.125rem auto 1.125rem 0; 
+	margin: 0.5rem auto; 
 }
 
 
@@ -328,11 +328,16 @@ img {width: 100%;}
 		justify-content: flex-start;
 	}
 }
-.carousel-item {
+.carousel-item-1 {
 	img {
 		width: 150px;
 		border: 2px solid $brand-4;
 		padding: 2rem;
+	}
+}
+.carousel-item {
+	img {
+		
 		margin-right: 2rem;
 	}
 	.line, h4 {
@@ -340,7 +345,7 @@ img {width: 100%;}
 		margin: 0.5rem;
 	}
 	.media {
-		padding: 3rem 6rem;;
+		padding: 4rem 6rem;
 	} 
 
 }
@@ -427,6 +432,66 @@ img {width: 100%;}
 		position: relative;
 	}
 }
+
+
+
+
+//JUMB 4
+#jumbotron-four {
+	@extend #jumbotron-two;
+	background-color: $white;
+	z-index: 500;
+	position: relative;
+}
+
+.carousel-item-2 {
+	img {
+		width: 200px;
+	}
+	.media {
+		padding: 4rem;
+	} 
+}
+
+// FEATURE 7
+#feature-seven {
+	background: url("../img/bg-2.jpg") no-repeat center;
+	background-size: cover;
+	.feature-heading {
+		margin-bottom: 5rem;
+	}
+}
+
+.media-clients {
+	padding: 2rem 1rem;
+	h6 {
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 0.5rem;
+	}
+	.font-italic {
+		color: $gray;
+		margin-bottom: 0.25rem;
+	}
+
+	img {
+		width: 110px;
+		margin-right: 2rem;
+	}
+
+	.line {
+		display: inline-block;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 ////////////empty////////////

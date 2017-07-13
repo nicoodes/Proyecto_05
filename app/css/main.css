@@ -5689,7 +5689,7 @@ img {
 
 .line-small {
   width: 57px;
-  margin: 1.125rem auto 1.125rem 0; }
+  margin: 0.5rem auto; }
 
 .gradient-container,
 .gradient-container-move {
@@ -5917,32 +5917,34 @@ img {
   color: white;
   background: url(../img/arrow-down.png) no-repeat center; }
 
-#jumbotron-two {
+#jumbotron-two, #jumbotron-four {
   background-color: #f8f8f8; }
-  #jumbotron-two .carousel-control-prev-icon {
+  #jumbotron-two .carousel-control-prev-icon, #jumbotron-four .carousel-control-prev-icon {
     background-image: url(../img/arrow-left.png);
     background-size: 12px;
     margin-left: 0.5rem; }
-  #jumbotron-two .carousel-control-next-icon {
+  #jumbotron-two .carousel-control-next-icon, #jumbotron-four .carousel-control-next-icon {
     background-image: url(../img/arrow-right.png);
     background-size: 12px;
     margin-right: 0.5rem; }
-  #jumbotron-two .carousel-control-prev,
-  #jumbotron-two .carousel-control-next {
+  #jumbotron-two .carousel-control-prev, #jumbotron-four .carousel-control-prev,
+  #jumbotron-two .carousel-control-next, #jumbotron-four .carousel-control-next {
     width: 7%;
     color: #999999;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-  #jumbotron-two .carousel-control-prev {
+  #jumbotron-two .carousel-control-prev, #jumbotron-four .carousel-control-prev {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
 
-.carousel-item img {
+.carousel-item-1 img {
   width: 150px;
   border: 2px solid #95e1d3;
-  padding: 2rem;
+  padding: 2rem; }
+
+.carousel-item img {
   margin-right: 2rem; }
 
 .carousel-item .line, .carousel-item .line-white, .carousel-item h4 {
@@ -5950,7 +5952,7 @@ img {
   margin: 0.5rem; }
 
 .carousel-item .media {
-  padding: 3rem 6rem; }
+  padding: 4rem 6rem; }
 
 .our-team-icons a:hover {
   text-decoration: none; }
@@ -6006,6 +6008,38 @@ img {
   margin-bottom: -3px;
   z-index: 400;
   position: relative; }
+
+#jumbotron-four {
+  background-color: #fff;
+  z-index: 500;
+  position: relative; }
+
+.carousel-item-2 img {
+  width: 200px; }
+
+.carousel-item-2 .media {
+  padding: 4rem; }
+
+#feature-seven {
+  background: url("../img/bg-2.jpg") no-repeat center;
+  background-size: cover; }
+  #feature-seven .feature-heading {
+    margin-bottom: 5rem; }
+
+.media-clients {
+  padding: 2rem 1rem; }
+  .media-clients h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0.5rem; }
+  .media-clients .font-italic {
+    color: #333333;
+    margin-bottom: 0.25rem; }
+  .media-clients img {
+    width: 110px;
+    margin-right: 2rem; }
+  .media-clients .line, .media-clients .line-white {
+    display: inline-block; }
 
 .empty {
   height: 500px;
