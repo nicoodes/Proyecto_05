@@ -162,10 +162,7 @@ img {width: 100%;}
 }
 
 
-.empty {
-	height: 500px;
-	background-color: lighten(green, 50%);
-}
+
 
 //FEATURES GENERAL
 
@@ -179,7 +176,7 @@ img {width: 100%;}
 }
 
 //FEATURE ONE
-.about-us-img {
+.images-container {
 	margin-top: 5rem;
 	h5 {
 		font-weight: 700;
@@ -260,6 +257,7 @@ img {width: 100%;}
 		padding-top: 8.5rem;
 	}
 	.card {
+		// margin-bottom: 0.5rem;
 		a {
 			color: $gray;
 		}
@@ -272,7 +270,7 @@ img {width: 100%;}
 			margin-right: 1rem;
 		}
 		&-block {
-			max-height: 11rem;
+			max-height: 10.5rem;
 			overflow-y: scroll;
 			&::-webkit-scrollbar {
 				width: 5px;
@@ -302,4 +300,141 @@ img {width: 100%;}
 		color: white;
 		background: url(../img/arrow-down.png) no-repeat center;
 	}
+}
+
+//JUMBOTRON 2
+#jumbotron-two {
+	background-color: $gray-bg;
+	
+	.carousel-control-prev-icon {
+		background-image: url(../img/arrow-left.png);
+		background-size: 12px;
+		margin-left: 0.5rem;
+
+	}
+	.carousel-control-next-icon {
+		background-image: url(../img/arrow-right.png);
+		background-size: 12px;
+
+		margin-right: 0.5rem;
+	}
+	.carousel-control-prev,
+	.carousel-control-next {
+		width: 7%;
+		color: $gray-light;
+		justify-content: flex-end;
+	}
+	.carousel-control-prev {
+		justify-content: flex-start;
+	}
+}
+.carousel-item {
+	img {
+		width: 150px;
+		border: 2px solid $brand-4;
+		padding: 2rem;
+		margin-right: 2rem;
+	}
+	.line, h4 {
+		display: inline-block;
+		margin: 0.5rem;
+	}
+	.media {
+		padding: 3rem 6rem;;
+	} 
+
+}
+
+// FEATURE FIVE
+#feature-five {
+
+}
+
+.our-team-icons {
+
+	a:hover {
+		text-decoration: none;
+	}
+	.fa {
+
+		display: block;
+		padding: 1rem;
+		font-size: 1.75rem;
+		background-color: $brand-2;
+		color: $brand-primary;
+		border-left: 1px solid $brand-primary;
+		&-facebook {
+			border-left: none;
+			padding: 1rem 1.3rem;
+		}
+
+		&:hover {
+			color: $white;
+			background-color: $brand-primary;
+		}
+	}
+
+}
+
+//JUMB 3
+#jumbotron-three {
+	background-color: $gray-bg;
+	padding: 3rem 0;
+	a:hover .logo-client {
+		transform: scale(0.9);
+		// background-size: 110%;
+	}
+
+}
+.logo-client {
+	margin: 1rem auto;
+	width: 135px;
+	height: 145px;
+	background: url(../img/logos.png) no-repeat;
+	border-radius: 50%
+	
+}
+.logo-client-2 {
+	background-position: 0 0;
+}
+
+.logo-client-2 {
+	background-position: -215px 0;
+}
+
+.logo-client-3 {
+	background-position: -420px 0;
+}
+
+.logo-client-4 {
+	background-position: -642px 0;
+}
+
+.logo-client-5 {
+	background-position: -850px 0;
+}
+
+.logo-client-6 {
+	background-position: -1070px 3px;
+}
+
+// FEATURE 6
+#feature-six {
+	.container-fluid {
+		padding: 0;
+		margin-bottom: -3px;
+		z-index: 400;
+		position: relative;
+	}
+}
+
+
+////////////empty////////////
+
+
+.empty {
+	height: 500px;
+	background-color: lighten(green, 50%);
+	z-index: 500;
+	position: relative;
 }
