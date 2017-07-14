@@ -389,7 +389,9 @@ img {width: 100%;}
 		transform: scale(0.9);
 		// background-size: 110%;
 	}
-
+	@media screen and (max-width: 310px) {
+		display: none;
+	}
 }
 .logo-client {
 	margin: 1rem auto;
@@ -485,14 +487,188 @@ img {width: 100%;}
 }
 
 
+//FEATURE 8
+#feature-eight {
+	.card {
+		border: none;
+		position: relative;
+		&-block {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.icon-blog {
+	width: auto;
+	display: inline-block;
+	&-text {
+		display: inline-block;
+		padding: 0 0.5rem 0 0.25rem;
+	}
+}
 
 
+.square-blog {
+	
+
+	width: 60px;
+	height: 70px;
+	background-color: $brand-4;
+	padding: 0.35rem;
+	top: auto;
+	left: -10px;
+	bottom: 10px;
+	&-container {
+		position: relative;
+	}
+
+	p {
+		color: $white;
+		margin: 0;
+		text-align: center;
+	}
+
+	&-text {
+		font-size: 1.875rem;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		margin-bottom: -0.7rem!important;
+	}
+}
+
+// JUMB 5
+#jumbotron-five {
+	background: url("../img/map.jpg") no-repeat center;
+	background-size: cover;
+	padding: 5rem 0;
+	a:hover {
+		text-decoration: none;
+	}
+	a:hover h4{
+		transform: scale(1.2);
+	}
+	img {
+		width: auto;
+	}
+	.line {
+		margin-bottom: 0;
+	}
+	h4 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: $brand-primary;
+		margin-top: 1rem;
+	}
+}
 
 
+//FOOTER
+#footer-main {
+	padding-bottom: 4rem;
+}
 
+.footer-main-info {
+	padding-top: 4rem;
+	h3 {
+		font-size: 2.875rem;
+	}
+	h5, h6 {
+		display: inline-block;
+	}
+	h5 {
+		font-weight: 700;
+	}
+	hr {
+		width: 85%;
+	}
+}
 
+.footer-social {
+	display: flex;
+	flex-wrap: wrap;
+	
+	.nav-link {
+		padding: 0.5em 0.5em;
+	}
+	.fa {
+		color: $brand-4;
+		font-size: 1.125rem;
+	}
+	p {
+		margin: 0;
+		padding-top: 0.5rem;
+	}
+}
 
+.footer-subscribe {
+	align-items: stretch;
+	button {
+		text-transform: uppercase;
+		padding: 0.75em 1.75em;
+	}
+	input {
+		&::placeholder {
+			font-size: 0.9rem;
+			font-style: italic;
+			font-family: 'Roboto', sans-serif;
+			color: $gray-lighter;
 
+		}
+	}
+}
+
+.footer-main-blog {
+	padding: 4rem 0 0 0.5rem;
+	a{
+		color: $gray;
+	}
+	a:hover {
+		// text-decoration: none;
+	}
+	.media {
+		margin-top: 1.5rem;
+		img {
+			width: auto;
+		}
+		h6 {
+			font-size: 0.75rem;
+			line-height: 1.5;
+		}
+		p {
+			font-size: 0.8125rem;
+		}
+	}
+}
+
+.footer-main-instagram {
+	padding: 4rem 0 0 0.5rem;
+	img {
+		max-width: 400px;
+		display: block;
+	}
+	a {
+		color: $gray-light;
+		font-size: 0.875rem;
+
+	}
+	a:hover {
+		text-decoration: none;
+		color: $brand-primary;
+	}
+}
+
+#footer-bottom {
+	text-align: center;
+	border-top: 1px solid $gray-lighter;
+	padding: 2rem 0;
+	h6 {
+		font-weight: 700;
+		a {
+			color: $brand-primary;
+		}
+	}
+}
 
 ////////////empty////////////
 
